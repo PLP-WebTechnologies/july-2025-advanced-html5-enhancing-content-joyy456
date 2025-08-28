@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Form Webpage</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header, main, footer {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+    header {
+      background: #4CAF50;
+      color: white;
+      text-align: center;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    table, th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background: #f4f4f4;
+    }
+    fieldset {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    legend {
+      font-weight: bold;
+      color: #4CAF50;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    input[type="submit"]:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Enhanced Multi-Section Web Page</h1>
+    <p>Showcasing Lists, Tables, Media, and an Accessible HTML5 Form</p>
+  </header>
+
+  <main>
+    <!-- Section with a List -->
+    <section>
+      <h2>Popular Web Development Tools</h2>
+      <ul>
+        <li>Visual Studio Code</li>
+        <li>Git & GitHub</li>
+        <li>Node.js</li>
+        <li>Chrome DevTools</li>
+        <li>Figma (for design collaboration)</li>
+      </ul>
+    </section>
+
+    <!-- Section with a Table -->
+    <section>
+      <h2>Comparison of Frontend Frameworks</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Framework</th>
+            <th>Language</th>
+            <th>Popularity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>React</td>
+            <td>JavaScript</td>
+            <td>High</td>
+          </tr>
+          <tr>
+            <td>Angular</td>
+            <td>TypeScript</td>
+            <td>Medium</td>
+          </tr>
+          <tr>
+            <td>Vue.js</td>
+            <td>JavaScript</td>
+            <td>High</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Section with Media -->
+    <section>
+      <h2>Sample Media Showcase</h2>
+      <figure>
+        <img src="https://via.placeholder.com/600x300" alt="Placeholder image" width="100%">
+        <figcaption>An example image embedded into the webpage.</figcaption>
+      </figure>
+      <audio controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <!-- HTML5 Form -->
+    <section>
+      <h2>User Registration Form</h2>
+      <form action="#" method="post">
+        <!-- Personal Information -->
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="3">
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="example@email.com" required autocomplete="email">
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" placeholder="At least 6 characters" required minlength="6">
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="e.g. +254712345678" pattern="^\+?[0-9]{10,15}$" required>
+        </fieldset>
+
+        <!-- Preferences -->
+        <fieldset>
+          <legend>Preferences</legend>
+          <label for="country">Country:</label>
+          <select id="country" name="country" required>
+            <option value="">--Select your country--</option>
+            <option value="Kenya">Kenya</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="India">India</option>
+          </select>
+
+          <label>Gender:</label>
+          <input type="radio" id="male" name="gender" value="Male" required>
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="Female">
+          <label for="female">Female</label>
+          <input type="radio" id="other" name="gender" value="Other">
+          <label for="other">Other</label>
+
+          <label for="bio">Short Bio:</label>
+          <textarea id="bio" name="bio" rows="4" placeholder="Tell us something about yourself..."></textarea>
+        </fieldset>
+
+        <!-- Agreement -->
+        <fieldset>
+          <legend>Terms & Agreement</legend>
+          <input type="checkbox" id="terms" name="terms" required>
+          <label for="terms">I agree to the <a href="#">Terms and Conditions</a></label>
+        </fieldset>
+
+        <input type="submit" value="Register">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Enhanced Form Page | Designed with HTML5</p>
+  </footer>
+</body>
+</html>
